@@ -1,0 +1,59 @@
+.user-details {
+    position: relative;
+  
+    .cover-image {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .user-info {
+        position: absolute;
+        z-index: 2;
+
+        display: grid;
+        grid-template-columns: 22% 30%;
+        grid-template-rows: 100%;
+        background-color: rgba(37, 42, 56, 56);
+
+    
+        .profile-page-image {
+            width: 20vw;
+            border-radius: 100%;
+            border: white 2px solid;
+        }
+        
+        .profile-info {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 15% 15%;
+            background-color: rgba(37, 42, 56, 56);
+
+        
+            .full-name {
+                font-size: 32px;
+                line-height: 40px;
+                margin: 0%;
+                background-color: rgba(37, 42, 56, 56);
+
+            }
+            
+            .username {
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0%;
+                background-color: rgba(37, 42, 56, 56);
+            }
+            
+            .user-email {
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0%;
+                background-color: rgba(37, 42, 56, 56);
+            }
+        }
+    }
+}
+
+
+
