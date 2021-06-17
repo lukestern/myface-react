@@ -9,8 +9,7 @@ function App() {
     return (
         <Router>
             <NavBar />
-            <h1>MyFace</h1>
-            
+          
                 <Switch>
                     <Route exact path="/">
                         <Redirect to="/posts" />

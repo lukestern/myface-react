@@ -1,0 +1,32 @@
+.nav-bar {
+    background-color: #151820;
+    font-size: large;
+    padding: 1% 0%;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    width: 100%;
+
+}
+
+.nav-options {
+    display: flex;
+}
+
+.nav-link {
+    background-color: #151820;
+    padding: 0 2.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2985FF;
+}
+
+.nav-container {
+    background-color: #151820;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+}
