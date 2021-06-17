@@ -1,15 +1,17 @@
 .user-details {
-    position: relative;
+    display: grid;
   
     .cover-image {
         width: 100%;
-        position: absolute;
+        // position: absolute;
         z-index: 1;
+        grid-area: 1/1;
     }
     
     .user-info {
-        position: absolute;
+        // position: absolute;
         z-index: 2;
+        grid-area: 2/2;
 
         display: grid;
         grid-template-columns: 22% 30%;
