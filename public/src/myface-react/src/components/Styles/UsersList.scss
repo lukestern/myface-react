@@ -1,20 +1,28 @@
-.users {
+.users-list {
+    margin-top: 3%;
     display: flex;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0%;
 }
+
 .user {
-    margin : 10px;
-    padding: 5px;
-    border: 1px solid beige
-    
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 15%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #151820;
+    text-decoration: none;
 }
+
 .profile-image {
-    width:100px;
-    height: 100px;
-    
+    width: 95%;
+    margin: 1%;
 }
 
 .user-name {
-    color: #15403f;
     text-align: center;
 }

@@ -2,13 +2,29 @@
     width: 25%;
     margin: 1%;
     background-color: #151820;
+    .image {
+       max-width: 100%;
+    }
+    
+    p {
+        background-color: #151820;
+        padding-left: 2%;
+    }
 }
 
-.image {
-   max-width: 100% ;
-}
 
-p {
+.post-thumbnail {
     background-color: #151820;
-    padding-left: 2%;
+    margin: 2%;
+    width: 100%;
+
+    .image {
+        max-width: 100%;
+     }
+     
+     p {
+         background-color: #151820;
+         padding-left: 2%;
+         white-space: initial;
+     }
 }

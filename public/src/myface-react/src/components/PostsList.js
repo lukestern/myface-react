@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Post} from './Post';
+import { Post } from './Post';
 import "./Styles/PostsList.scss";
 import "./Styles/Buttons.scss"
 
@@ -9,9 +9,9 @@ export function PostsList() {
     function fetchData(postRoute) {
         fetch(`http://localhost:3001${postRoute}`)
             .then(response => response.json())
-            .then(data => setPostData(data));   
+            .then(data => setPostData(data));
     }
-    
+
     useEffect(() => {
         fetchData('/posts')
     }, []);
@@ -23,19 +23,24 @@ export function PostsList() {
     return (
         <div>
             <ol className='posts-list'>
-                {postData.results.map(post => 
-                    <Post name={post.postedBy.name} createdAt={post.createdAt} imageUrl={post.imageUrl} message={post.message} />
+                {postData.results.map(post =>
+                    <Post
+                        name={post.postedBy.name}
+                        createdAt={post.createdAt}
+                        imageUrl={post.imageUrl}
+                        message={post.message}
+                        className='post' />
                 )}
             </ol>
 
-        {postData.previous 
-            ? <button onClick={() => fetchData(postData.previous)}>Previous</button> 
-            : null}
-        
-        {postData.next
-            ? <button onClick={() => fetchData(postData.next)}>Next</button>
-            : null}
-        
+            {postData.previous
+                ? <button onClick={() => fetchData(postData.previous)}>Previous</button>
+                : null}
+
+            {postData.next
+                ? <button onClick={() => fetchData(postData.next)}>Next</button>
+                : null}
+
         </div>
     )
 }
