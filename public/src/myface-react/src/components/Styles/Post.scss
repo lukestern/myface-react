@@ -1,8 +1,14 @@
-.image {
-    width: 15%;
-    height: 15%;
+.post {
+    width: 25%;
+    margin: 1%;
+    background-color: #151820;
 }
+
+.image {
+   max-width: 100% ;
+}
+
 p {
-    color: beige;
-    font-size: smaller;
+    background-color: #151820;
+    padding-left: 2%;
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Post} from './Post';
+import "./Styles/PostsList.scss";
+import "./Styles/Buttons.scss"
 
 export function PostsList() {
     const [postData, setPostData] = useState(null);
@@ -20,7 +22,7 @@ export function PostsList() {
 
     return (
         <div>
-            <ol className='posts'>
+            <ol className='posts-list'>
                 {postData.results.map(post => 
                     <Post name={post.postedBy.name} createdAt={post.createdAt} imageUrl={post.imageUrl} message={post.message} />
                 )}
