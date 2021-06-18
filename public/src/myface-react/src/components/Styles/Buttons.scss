@@ -1,16 +1,32 @@
 @import "./Constants.scss";
 
-button {
-    font-size: $desktopButtonFontSize;
-    line-height: $desktopButtonLineHeight; 
-    font-weight: bold;
-    padding: 10px 20px;  
-    color: $primaryColour;
-    border: $primaryColour solid;
-    margin: 1%;
-    
-    &:hover {
+.standard-button {
+  font-size: $desktopButtonFontSize;
+  line-height: $desktopButtonLineHeight;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: $primaryColour;
+  border: $primaryColour solid;
+  margin: 1%;
+
+  &:hover {
     background-color: $primaryColour;
     color: $backgroundColour;
-      }
-    }
+  }
+}
+
+.interaction-button {
+  font-size: $desktopButtonFontSize;
+  line-height: $desktopButtonLineHeight;
+  background-color: $darkerBackgroundColour;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: $primaryColour;
+  border: $primaryColour solid;
+  margin: 1%;
+
+  &:hover {
+    background-color: $primaryColour;
+    color: $darkerBackgroundColour;
+  }
+}

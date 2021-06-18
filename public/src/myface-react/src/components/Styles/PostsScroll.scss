@@ -1,4 +1,4 @@
-@import 'Constants';
+@import "Constants";
 
 .posts-scroll-title {
     font-size: $desktopSubTitleFontSize;
@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: repeat(10, 28vw);
     grid-template-rows: 45vw;
+    height: auto;
     column-gap: 2%;
     overflow-x: auto;
     overflow-y: hidden;

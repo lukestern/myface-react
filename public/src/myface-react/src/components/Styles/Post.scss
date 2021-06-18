@@ -1,11 +1,11 @@
-@import 'Constants';
+@import "Constants";
 
 .post {
     width: 25%;
     margin: 1%;
     background-color: $darkerBackgroundColour;
     .image {
-       max-width: 100%;
+        max-width: 100%;
     }
 
     .interaction-button-container {
@@ -13,7 +13,7 @@
         justify-content: space-around;
         background-color: $darkerBackgroundColour;
     }
-    
+
     p {
         background-color: $darkerBackgroundColour;
         padding-left: 2%;
@@ -27,11 +27,17 @@
 
     .image {
         max-width: 100%;
-     }
-     
-     p {
-         background-color: $darkerBackgroundColour;
-         padding-left: 2%;
-         white-space: initial;
-     }
+    }
+
+    .interaction-button-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: $darkerBackgroundColour;
+    }
+
+    p {
+        background-color: $darkerBackgroundColour;
+        padding-left: 2%;
+        white-space: initial;
+    }
 }

@@ -3,20 +3,19 @@ import "./Styles/Buttons.scss"
 
 export function Post(props) {
 
-    const handleSubmit = (interactionType) => {
-        const path = `/posts/${props.id}/${interactionType}`
-        console.log(props.interaction);
-        sendInteraction(path);
-        console.log(props.interaction);
+    const handleSubmit = (event, interactionType) => {
+        event.preventDefault();
+        const url = `http://localhost:3001/posts/${props.id}/${interactionType}/`
+        sendInteraction(url);
     }
 
-    async function sendInteraction(path) {
+    async function sendInteraction(url) {
         const requestOptions = {
             method: 'POST',
             headers: { 'Accept': 'application/json' }
         };
-
-        await fetch(`http://localhost:3001${path}`, requestOptions)
+        
+        await fetch(url, requestOptions)
         .then(() => props.setInteraction(props.interaction + 1));
     }
 
@@ -24,8 +23,8 @@ export function Post(props) {
         <div className={props.className}>
             <img className='image' alt='' src={props.imageUrl} />
             <div className='interaction-button-container'>
-                <button onClick={() => handleSubmit('like')}>Like</button>
-                <button onClick={() => handleSubmit('dislike')}>Dislike</button>
+                <button onClick={(e) => handleSubmit(e, 'like')}>Like</button>
+                <button onClick={(e) => handleSubmit(e, 'dislike')}>Dislike</button>
             </div>
             {props.name && <p>{props.name}</p>}
             <p>{props.createdAt.slice(0, 10).split('-').reverse().join('-')}</p>

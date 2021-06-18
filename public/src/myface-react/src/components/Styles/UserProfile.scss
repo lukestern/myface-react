@@ -1,46 +1,42 @@
-@import 'Constants';
+@import "Constants";
 
 .user-details {
-  
     .cover-image {
         width: 100%;
     }
-    
+
     .user-info {
         display: grid;
         grid-template-columns: 22% 30%;
         grid-template-rows: 100%;
         background-color: $transparentBackgroundColour;
 
-    
         .profile-page-image {
             width: 20vw;
             border-radius: 100%;
             border: $foregroundColour 2px solid;
         }
-        
+
         .profile-info {
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: 25% 15% 15%;
             background-color: $transparentBackgroundColour;
 
-        
             .full-name {
                 font-size: $desktopTitleFontSize;
                 line-height: $desktopTitleLineHeight;
                 margin: 0%;
                 background-color: $transparentBackgroundColour;
-
             }
-            
+
             .username {
                 font-size: $desktopBodyFontSize;
                 line-height: $desktopBodyLineHeight;
                 margin: 0%;
                 background-color: $transparentBackgroundColour;
             }
-            
+
             .user-email {
                 font-size: $desktopBodyFontSize;
                 line-height: $desktopBodyLineHeight;
@@ -50,6 +46,3 @@
         }
     }
 }
-
-
-
