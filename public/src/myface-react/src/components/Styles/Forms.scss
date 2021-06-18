@@ -1,0 +1,22 @@
+@import 'Constants.scss';
+
+.page-container {
+    display: flex;
+    justify-content: space-around;
+
+    .create-item-form {
+
+        .form-item {
+            display: grid;
+            grid-template-columns: repeat(2, 15vw);
+            grid-row: auto;
+            margin: 2vw;
+            
+            .form-input {
+                font-size: $desktopBodyFontSize;
+                line-height: $desktopBodyLineHeight;
+                background-color: $foregroundColour;
+            }
+        }
+    }
+}

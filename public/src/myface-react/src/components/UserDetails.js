@@ -13,9 +13,8 @@ export function UserDetails() {
             .then(data => setUserData(data));
     }
 
-    useEffect(() => {
-        fetchData(`/users/${userId}`)
-    }, []);
+    // eslint-disable-next-line
+    useEffect(() => { fetchData(`/users/${userId}`) }, []);
 
     if (!userData) {
         return <div>Waiting for data!</div>
@@ -23,7 +22,7 @@ export function UserDetails() {
 
     return (
         <div className='main'>
-            <UserProfile userData={userData}/>
+            <UserProfile userData={userData} />
             <PostsScroll title='User Posts' posts={userData.posts} />
             <PostsScroll title='User Likes' posts={userData.likes} />
             <PostsScroll title='User Dislikes' posts={userData.dislikes} />

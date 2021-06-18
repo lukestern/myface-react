@@ -3,6 +3,7 @@
 .standard-button {
   font-size: $desktopButtonFontSize;
   line-height: $desktopButtonLineHeight;
+  text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
   color: $primaryColour;
@@ -16,14 +17,11 @@
 }
 
 .interaction-button {
-  font-size: $desktopButtonFontSize;
-  line-height: $desktopButtonLineHeight;
+  font-size: $interactionButtonFontSize;
+  line-height: $interactionButtonLineHeight;
   background-color: $darkerBackgroundColour;
-  font-weight: bold;
-  padding: 10px 20px;
   color: $primaryColour;
-  border: $primaryColour solid;
-  margin: 1%;
+  border: $primaryColour solid 1px;
 
   &:hover {
     background-color: $primaryColour;

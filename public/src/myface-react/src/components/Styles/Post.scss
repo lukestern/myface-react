@@ -8,12 +8,17 @@
         max-width: 100%;
     }
 
-    .interaction-button-container {
+    .interaction-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: $darkerBackgroundColour;
-    }
 
+        .interaction-button-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: $darkerBackgroundColour;
+        }
+    }
     p {
         background-color: $darkerBackgroundColour;
         padding-left: 2%;
@@ -29,15 +34,21 @@
         max-width: 100%;
     }
 
-    .interaction-button-container {
+    .interaction-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: $darkerBackgroundColour;
+
+        .interaction-button-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: $darkerBackgroundColour;
+        }
     }
 
     p {
-        background-color: $darkerBackgroundColour;
         padding-left: 2%;
+        background-color: $darkerBackgroundColour;
         white-space: initial;
     }
 }

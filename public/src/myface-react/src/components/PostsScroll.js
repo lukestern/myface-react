@@ -7,12 +7,11 @@ export function PostsScroll({ title, posts }) {
             <p className='posts-scroll-title'>{title}</p>
             <ul className='posts-scroll-container'>
                 {posts.map((post) =>
-                    <Post 
-                    createdAt={post.createdAt}
-                    id={post.id}
-                    imageUrl={post.imageUrl} 
-                    message={post.message}
-                    className='post-thumbnail' />
+                    <Post
+                        post={post}
+                        key={post.id}
+                        className='post-thumbnail'
+                     />
                 )}
             </ul>
         </div>
