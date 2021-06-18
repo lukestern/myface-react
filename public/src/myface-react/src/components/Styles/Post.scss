@@ -7,13 +7,18 @@
     .image {
        max-width: 100%;
     }
+
+    .interaction-button-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: $darkerBackgroundColour;
+    }
     
     p {
         background-color: $darkerBackgroundColour;
         padding-left: 2%;
     }
 }
-
 
 .post-thumbnail {
     background-color: $darkerBackgroundColour;

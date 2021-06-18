@@ -4,7 +4,7 @@ import './Styles/NavBar.scss'
 
 export function NavBar() {
     return (
-        <div class="nav-container">
+        <div className="nav-container">
             <nav className="nav-bar">
                 MyFace
                 <div className="nav-options">

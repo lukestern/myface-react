@@ -5,7 +5,7 @@ import { UserProfile } from "./UserProfile"
 
 export function UserDetails() {
     const [userData, setUserData] = useState(null);
-    const { userId } = useParams()
+    const { userId } = useParams();
 
     function fetchData(userRoute) {
         fetch(`http://localhost:3001${userRoute}`)
