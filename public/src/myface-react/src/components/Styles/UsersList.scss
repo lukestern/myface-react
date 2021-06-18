@@ -1,3 +1,5 @@
+@import 'Constants';
+
 .users-list {
     margin-top: 3%;
     display: flex;
@@ -14,15 +16,18 @@
     width: 15%;
     margin: 1%;
     padding: 1%;
-    background-color: #151820;
+    background-color: $darkerBackgroundColour;
     text-decoration: none;
 }
 
 .profile-image {
     width: 95%;
     margin: 1%;
+    border-radius: 100%;
+    border: $foregroundColour 2px solid;
 }
 
 .user-name {
     text-align: center;
+    background-color: $darkerBackgroundColour;
 }

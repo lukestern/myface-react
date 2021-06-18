@@ -1,6 +1,9 @@
+@import "./Constants.scss";
+
 .nav-bar {
-    background-color: #151820;
-    font-size: large;
+    background-color: $darkerBackgroundColour;
+    font-size: $desktopSubTitleFontSize;
+    line-height: $desktopSubTitleLineHeight;
     padding: 1% 0%;
     margin-bottom: 4px;
     display: flex;
@@ -15,17 +18,17 @@
 }
 
 .nav-link {
-    background-color: #151820;
+    background-color: $darkerBackgroundColour;
     padding: 0 0 0 3rem;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #2985FF;
+    color: $primaryColour;
 }
 
 .nav-container {
-    background-color: #151820;
+    background-color: $darkerBackgroundColour;
     display: flex;
     justify-content: right;
     padding: 0;

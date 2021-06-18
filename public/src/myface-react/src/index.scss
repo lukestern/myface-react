@@ -1,7 +1,9 @@
+@import ".//src/components/Styles/Constants.scss";
+
 * {
   font-family: 'Segoe UI', 'Open Sans';
-  color: #DCDCDC;
-  background-color: #252A38;
+  color: $foregroundColour;
+  background-color: $backgroundColour;
 }
 
 

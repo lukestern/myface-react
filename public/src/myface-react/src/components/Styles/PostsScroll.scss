@@ -1,3 +1,10 @@
+@import 'Constants';
+
+.posts-scroll-title {
+    font-size: $desktopSubTitleFontSize;
+    line-height: $desktopSubTitleLineHeight;
+}
+
 .posts-scroll-container {
     display: grid;
     grid-template-columns: repeat(10, 28vw);
