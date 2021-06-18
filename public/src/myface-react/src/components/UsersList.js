@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Styles/UsersList.scss";
-import './Styles/Buttons.scss';
+import "./Styles/Buttons.scss";
 
 export function UsersList() {
     const [usersData, setUsersData] = useState(null);
@@ -20,9 +20,9 @@ export function UsersList() {
 
     return (
         <div>
-            <button class='standard-button'>
-                <Link to="/users/create">Create User</Link>
-            </button>
+            <div className="button-container">
+                <Link className="standard-button" to="/users/create">Create User</Link>
+            </div>
             <div className='users-list'>
                 {usersData.results.map(user =>
                     <Link key={user.id} className='user' to={`/users/${user.id}`}>

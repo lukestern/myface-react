@@ -1,5 +1,9 @@
 @import "./Constants.scss";
 
+.button-container {
+  margin-top: 2vw;
+}
+
 .standard-button {
   font-size: $desktopButtonFontSize;
   line-height: $desktopButtonLineHeight;
