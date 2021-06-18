@@ -4,7 +4,7 @@ import '../index'
 
 export function CreateNewUser() {
     return (
-        <div class="page-container" id="page-container">
+        <div class="main">
             <div>
             <h1 className='title'>New User</h1>
             <form class="create-item-form" method="post" action="/users/create">

@@ -23,7 +23,7 @@ export function PostsList() {
     }
 
     return (
-        <div>
+        <div className='main'>
             <ol className='posts-list'>
                 {postData.results.map(post =>
                     <Post

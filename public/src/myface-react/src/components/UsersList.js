@@ -19,7 +19,7 @@ export function UsersList() {
     }
 
     return (
-        <div>
+        <div className='main'>
             <div className="button-container">
                 <Link className="standard-button" to="/users/create">Create User</Link>
             </div>

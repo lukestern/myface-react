@@ -6,6 +6,11 @@
   background-color: $backgroundColour;
 }
 
+.main {
+  width: 80vw;
+  margin: 0 10vw;
+}
+
 .title {
   font-size: $desktopTitleFontSize;
   line-height: $desktopTitleLineHeight;
